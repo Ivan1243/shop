@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Store</title>
+ </head>
+ <body>
+     <button onclick="sell()">Количество продуктов</button>
+     <label id="count">document.getCount()</label>
+ </body>
+<script> 
+    function sell(){
+        alert(count--);
+            if (count < 1) {
+               alert("Нет в наличии");
+        }
+        document.getElementById("count").innerHTML=count;
+    }
+let count = 5;
+    function getCount(){
+        return count;
+    }
+</script>
+</html>
