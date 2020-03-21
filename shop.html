@@ -10,11 +10,13 @@
  </body>
 <script> 
     function sell(){
-        alert(count--);
-            if (count < 1) {
-               alert("Нет в наличии");
+        alert(count--); 
+        
+    document.getElementById("count").innerHTML= count;
+        
+    if (count < 0) {
+            alert("Нет в наличии");
         }
-        document.getElementById("count").innerHTML=count;
     }
 let count = 5;
     function getCount(){
